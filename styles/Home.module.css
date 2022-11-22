@@ -20,16 +20,92 @@
 
 .Navbar {
     margin-right: 90px;
+    user-select: none;
 }
 
-.Navbar ul {
+.Navbar>ul {
     list-style: none;
     display: flex;
 }
 
-.Navbar ul li {
+.Navbar>ul>li {
     padding: 9px 15px;
     margin-left: 20px;
+}
+
+
+.shopNav {
+    position: relative;
+}
+
+.productType {
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(0, 123, 230, 0.514);
+    border-radius: 5px;
+    margin-top: 9px;
+    display: none;
+    position: absolute;
+    transition: opacity .9s ease-in;
+}
+
+.shopNav:hover .productType {
+    display: block;
+}
+
+.productType li {
+    padding: 9px 12px;
+    border-bottom: 2px solid white;
+}
+
+.productType li:last-child {
+    border-radius: 5px;
+}
+
+.med {
+    position: relative;
+}
+
+.medOptions {
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(0, 123, 230, 0.514);
+    border-radius: 5px;
+    left: 100%;
+    margin-left: 5px;
+    top: 0;
+    display: none;
+    position: absolute;
+    transition: opacity .9s ease-in;
+}
+
+
+
+.med:hover .medOptions {
+    display: block;
+}
+
+.food {
+    position: relative;
+}
+
+.foodOptions {
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(0, 123, 230, 0.514);
+    border-radius: 5px;
+    left: 100%;
+    margin-left: 5px;
+    top: 0;
+    display: none;
+    position: absolute;
+    transition: opacity .9s ease-in;
+}
+
+
+
+.food:hover .foodOptions {
+    display: block;
 }
 
 .banner {

@@ -15,7 +15,28 @@ const Navigation = () => {
             <div className={styles.Navbar}>
                 <ul>
                     <li>Home</li>
-                    <li>Shop</li>
+                    <li className={styles.shopNav}>Shop
+                        <ul className={styles.productType}>
+                            <li className={styles.med}>Medicine
+                                <ul className={styles.medOptions}>
+                                    <li>Antibiotics</li>
+                                    <li>Antiparasitics</li>
+                                    <li>Antifungals</li>
+                                    <li>Steroids</li>
+                                    <li> Pain Relievers</li>
+                                </ul>
+                            </li>
+                            <li className={styles.food}>Food
+                                <ul className={styles.foodOptions}>
+                                    <li>Kibble</li>
+                                    <li>Canned</li>
+                                    <li>Semi-Moist</li>
+                                    <li>Home Cooked</li>
+                                    <li>Raw</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li>Classify</li>
                     <button className={styles.loginbtn}>Log In</button>
                 </ul>
